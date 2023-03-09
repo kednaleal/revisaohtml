@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #6B6A6A;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card {
+    background-color: #309F41;
+    width: 873px;
+    height: 513px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+    box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.25);
+}
+
+#logoifpi {
+    width: 109px;
+    height: 95px;
+    position: absolute;
+    top: 20px;
+}
+
+#fotoperfil {
+    border-radius: 50%;
+    border: 30px solid #1E3115;
+    width: 281px;
+    height: 281px;
+    position: absolute;
+    top: 120px;
+    left: 60px;
+}
+
+#fotoperfil:hover {
+    border: 40px solid #CE171F;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.content h1 {
+    font-size: 38px;
+    color: #fff;
+}
+
+.content p {
+    font-size: 24px;
+    font-weight: 900;
+    color: #1E3115;
+    margin: 15px 0;
+}
+
+.content ul {
+    display: flex;
+    gap: 20px;
+}
+
+.content ul li {
+    list-style: none;
+}
+
+.content ul span {
+    color: #1E3115;
+    font-size: 60px;
+}
+
+.content ul span:hover {
+    color: #CE171F;
+    transition: 0.3s;
+}
+
+@media(max-width: 750px) {
+    #fundobonito{
+        display: none;
+    }
+
+    #logoifpi{
+        display: none;
+    }
+
+    #fotoperfil{
+        position: static;
+        align-items: center;
+        width: 281px;
+        height: 281px;
+        margin: 50px;
+       
+
+       
+    }
+
+    .content{
+        position: static;
+        align-items: center;
+        justify-content: space-around;
+        display: inline-block;
+        
+        
+
+       
+    
+    }
+
+    .card{
+        position: static;
+        align-items:center;
+        display: inline-block;
+        height: 100vh;
+        padding: 0px 20px;
+        
+
+    }
+} 
